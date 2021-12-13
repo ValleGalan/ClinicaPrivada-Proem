@@ -303,6 +303,7 @@
             this.gridPacientes.RowTemplate.Height = 25;
             this.gridPacientes.Size = new System.Drawing.Size(847, 361);
             this.gridPacientes.TabIndex = 39;
+            this.gridPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridPacientes_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 

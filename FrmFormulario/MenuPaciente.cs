@@ -36,5 +36,10 @@ namespace FrmFormulario
         {
             gridPacientes.Rows.Clear();
         }
+
+        private void gridPacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
