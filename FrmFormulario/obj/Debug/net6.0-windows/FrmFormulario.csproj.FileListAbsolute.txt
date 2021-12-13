@@ -20,3 +20,4 @@ C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\FrmFormulario\obj\Debu
 C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\FrmFormulario\obj\Debug\net6.0-windows\FrmFormulario.genruntimeconfig.cache
 C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\FrmFormulario\obj\Debug\net6.0-windows\FrmFormulario.MenuPacientes.resources
 C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\FrmFormulario\obj\Debug\net6.0-windows\FrmFormulario.MenuMedicos.resources
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\FrmFormulario\obj\Debug\net6.0-windows\FrmFormulario.Properties.Resources.resources

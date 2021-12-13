@@ -30,11 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPacientes));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSalirP = new System.Windows.Forms.Button();
             this.btnSolicitar = new System.Windows.Forms.Button();
             this.btnDatos = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.gridPacientes = new System.Windows.Forms.DataGridView();
             this.lbNombrePaciente = new System.Windows.Forms.Label();
             this.lbEdad = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +50,15 @@
             this.cmbObraSocial = new System.Windows.Forms.ComboBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.gridPacientes = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmObraSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Enfermedad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridPacientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,23 +66,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(596, 37);
+            this.label1.Location = new System.Drawing.Point(681, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 30);
             this.label1.TabIndex = 19;
             this.label1.Text = "DETALLE ";
-            // 
-            // btnSalirP
-            // 
-            this.btnSalirP.BackColor = System.Drawing.Color.White;
-            this.btnSalirP.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSalirP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnSalirP.Location = new System.Drawing.Point(323, 56);
-            this.btnSalirP.Name = "btnSalirP";
-            this.btnSalirP.Size = new System.Drawing.Size(110, 35);
-            this.btnSalirP.TabIndex = 18;
-            this.btnSalirP.Text = "Salir";
-            this.btnSalirP.UseVisualStyleBackColor = false;
             // 
             // btnSolicitar
             // 
@@ -110,16 +105,6 @@
             this.label2.Size = new System.Drawing.Size(158, 30);
             this.label2.TabIndex = 15;
             this.label2.Text = "Datos Paciente";
-            // 
-            // gridPacientes
-            // 
-            this.gridPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridPacientes.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gridPacientes.Location = new System.Drawing.Point(563, 70);
-            this.gridPacientes.Name = "gridPacientes";
-            this.gridPacientes.RowTemplate.Height = 25;
-            this.gridPacientes.Size = new System.Drawing.Size(464, 361);
-            this.gridPacientes.TabIndex = 14;
             // 
             // lbNombrePaciente
             // 
@@ -280,7 +265,7 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.IndianRed;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.Location = new System.Drawing.Point(418, 386);
+            this.btnSalir.Location = new System.Drawing.Point(222, 370);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(90, 35);
             this.btnSalir.TabIndex = 37;
@@ -288,12 +273,80 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(863, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 38);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "limpiar Grilla";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // gridPacientes
+            // 
+            this.gridPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridPacientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.cmObraSocial,
+            this.Enfermedad,
+            this.estado});
+            this.gridPacientes.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gridPacientes.Location = new System.Drawing.Point(419, 79);
+            this.gridPacientes.Name = "gridPacientes";
+            this.gridPacientes.RowTemplate.Height = 25;
+            this.gridPacientes.Size = new System.Drawing.Size(847, 361);
+            this.gridPacientes.TabIndex = 39;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "DNI";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Apellido";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Edad";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // cmObraSocial
+            // 
+            this.cmObraSocial.HeaderText = "Obra Social";
+            this.cmObraSocial.Name = "cmObraSocial";
+            // 
+            // Enfermedad
+            // 
+            this.Enfermedad.HeaderText = "Enfermedad";
+            this.Enfermedad.Name = "Enfermedad";
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "Atendido";
+            this.estado.Name = "estado";
+            // 
             // MenuPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1055, 450);
+            this.ClientSize = new System.Drawing.Size(1278, 450);
+            this.Controls.Add(this.gridPacientes);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.cmbObraSocial);
@@ -312,11 +365,9 @@
             this.Controls.Add(this.lbEdad);
             this.Controls.Add(this.lbNombrePaciente);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSalirP);
             this.Controls.Add(this.btnSolicitar);
             this.Controls.Add(this.btnDatos);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.gridPacientes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPacientes";
             this.Text = "MenuPacientes";
@@ -330,11 +381,9 @@
         #endregion
 
         private Label label1;
-        private Button btnSalirP;
         private Button btnSolicitar;
         private Button btnDatos;
         private Label label2;
-        private DataGridView gridPacientes;
         private Label lbNombrePaciente;
         private Label lbEdad;
         private Label label3;
@@ -352,5 +401,14 @@
         private ComboBox cmbObraSocial;
         private TextBox txtEdad;
         private Button btnSalir;
+        private Button button1;
+        private DataGridView gridPacientes;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn cmObraSocial;
+        private DataGridViewTextBoxColumn Enfermedad;
+        private DataGridViewTextBoxColumn estado;
     }
 }

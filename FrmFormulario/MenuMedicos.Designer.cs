@@ -52,6 +52,14 @@
             this.lbEdad = new System.Windows.Forms.Label();
             this.lbNombrePaciente = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmObraSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Enfermedad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridMedico)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,11 +113,19 @@
             // gridMedico
             // 
             this.gridMedico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridMedico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.cmObraSocial,
+            this.Enfermedad,
+            this.estado});
             this.gridMedico.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gridMedico.Location = new System.Drawing.Point(424, 64);
+            this.gridMedico.Location = new System.Drawing.Point(409, 56);
             this.gridMedico.Name = "gridMedico";
             this.gridMedico.RowTemplate.Height = 25;
-            this.gridMedico.Size = new System.Drawing.Size(562, 361);
+            this.gridMedico.Size = new System.Drawing.Size(847, 361);
             this.gridMedico.TabIndex = 9;
             // 
             // label2
@@ -143,7 +159,7 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.IndianRed;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.Location = new System.Drawing.Point(879, 21);
+            this.btnSalir.Location = new System.Drawing.Point(318, 362);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(90, 35);
             this.btnSalir.TabIndex = 20;
@@ -282,12 +298,60 @@
             this.txtEstado.Size = new System.Drawing.Size(100, 33);
             this.txtEstado.TabIndex = 52;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(822, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 38);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "limpiar Grilla";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "DNI";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Apellido";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Edad";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // cmObraSocial
+            // 
+            this.cmObraSocial.HeaderText = "Obra Social";
+            this.cmObraSocial.Name = "cmObraSocial";
+            // 
+            // Enfermedad
+            // 
+            this.Enfermedad.HeaderText = "Enfermedad";
+            this.Enfermedad.Name = "Enfermedad";
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "Atendido";
+            this.estado.Name = "estado";
+            // 
             // MenuMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1009, 450);
+            this.ClientSize = new System.Drawing.Size(1262, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.cmbObraSocial);
@@ -346,5 +410,13 @@
         private Label lbEdad;
         private Label lbNombrePaciente;
         private TextBox txtEstado;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn cmObraSocial;
+        private DataGridViewTextBoxColumn Enfermedad;
+        private DataGridViewTextBoxColumn estado;
+        private Button button1;
     }
 }

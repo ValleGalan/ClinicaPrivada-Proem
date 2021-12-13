@@ -31,12 +31,12 @@ namespace FrmFormulario
             Paciente mypaciente4 = new Paciente("P4", "Flores", (int)36405293, (int)26, "Cobertura Simple", "Gripe", false);
             // host1.listaDeCola.Add(mypaciente1);
             host1.CrearPaciente("P1", "Lopez", (int)40821912, (int)23, "No tiene", "Gripe", false);
-            // gridMedico.DataSource = mypaciente1;
+            gridMedico.DataSource = mypaciente1;
 
 
             // host1.CrearPaciente("P9", "Lopez", 40821912, 23, "No tiene", "Gripe", false);
             // host1.CrearPaciente("P5", "Lopez", 40821912, 23, "No tiene", "Gripe", false);
-            //host1.Add(paciente);
+           
 
             txtDni.Text= "0";
             txtEdad.Text = "0";
@@ -47,8 +47,10 @@ namespace FrmFormulario
 
 
             host1.CrearPaciente(txtNombre.Text, txtApellido.Text, d, edad, cmbObraSocial.Text, txtEnfermedad.Text, estado);
-           // MessageBox.Show("Se guardo exitosamente");
-
+           
+            //Row.Cells["dataGridViewTextBoxColumn1"].Value = txtNombre.Text;
+            
+            //host1.Add(paciente);
             //limpio la grilla
             gridMedico.DataSource = null;
            

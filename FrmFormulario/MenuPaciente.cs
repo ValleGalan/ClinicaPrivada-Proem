@@ -31,5 +31,10 @@ namespace FrmFormulario
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            gridPacientes.Rows.Clear();
+        }
     }
 }
