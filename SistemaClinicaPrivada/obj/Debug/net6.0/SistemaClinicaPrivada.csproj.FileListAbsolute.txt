@@ -1,0 +1,15 @@
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\bin\Debug\net6.0\SistemaClinicaPrivada.exe
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\bin\Debug\net6.0\SistemaClinicaPrivada.deps.json
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\bin\Debug\net6.0\SistemaClinicaPrivada.runtimeconfig.json
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\bin\Debug\net6.0\SistemaClinicaPrivada.dll
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\bin\Debug\net6.0\ref\SistemaClinicaPrivada.dll
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\bin\Debug\net6.0\SistemaClinicaPrivada.pdb
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\SistemaClinicaPrivada.csproj.AssemblyReference.cache
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\SistemaClinicaPrivada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\SistemaClinicaPrivada.AssemblyInfoInputs.cache
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\SistemaClinicaPrivada.AssemblyInfo.cs
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\SistemaClinicaPrivada.csproj.CoreCompileInputs.cache
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\SistemaClinicaPrivada.dll
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\ref\SistemaClinicaPrivada.dll
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\SistemaClinicaPrivada.pdb
+C:\Users\Premium Intel\source\repos\SistemaClinicaPrivada\SistemaClinicaPrivada\obj\Debug\net6.0\SistemaClinicaPrivada.genruntimeconfig.cache

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SistemaClinicaPrivada/1.0.0": {
+        "runtime": {
+          "SistemaClinicaPrivada.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SistemaClinicaPrivada/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
