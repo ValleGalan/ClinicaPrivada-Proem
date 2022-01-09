@@ -89,7 +89,7 @@ namespace BibliotecaDeClases
             {
                 return nombre + " " + apellido + " " + dni;
             }
-            return "no se encontro un paciente activo";
+            return "no esta activo el paciente " + " "+ dni;
         }
 
     }

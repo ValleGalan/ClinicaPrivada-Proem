@@ -45,12 +45,17 @@ namespace FrmFormulario
             lbLista.Items.Add(paciente1.mostrarActivos(true,"Juana","Flores",34343434));
             lbLista.Items.Add(paciente1.mostrarActivos(false, "Oscar", "Gaspar", 25343423));
             lbLista.Items.Add(paciente1.mostrarActivos(true, "Pepe", "Perez", 98432187));
-            // lbLista.Items.Clear();
+            // 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            lbLista.Items.Clear();
         }
     }
 }
