@@ -8,59 +8,64 @@ namespace BibliotecaDeClases
 {
     public class Paciente : Persona
     {   /// <summary> Paciente hereda de persona </summary>
-        private int dni;
-        private int edad;
-        private string obraSocial;
-        private string enfermedad;
-        private bool estadoPaciente;
-        
+        private int dni { get; set; }
+        private int edad { get; set; }
+        private string obraSocial { get; set; }
+        private string enfermedad { get; set; }
+        private bool estadoPaciente { get; set; } //si esta activo o no
 
-        //contructor vacio
-
-     
-
-        public Paciente(string nombre, string apellido ) : base(nombre, apellido)
-        { 
-        }
-        //constructor 
+       
+        //constructor lleno
         public Paciente(string nombre, string apellido, int dni, int edad, string obraSocial, string enfermedad, bool estadoPaciente) : base(nombre, apellido)
         {
-            Dni = dni;
-            Edad = edad;
-            ObraSocial = obraSocial;
-            Enfermedad = enfermedad;
-            EstadoPaciente = estadoPaciente;
+            this.dni = dni;
+            this.edad = edad;
+            this.obraSocial = obraSocial;
+            this.enfermedad = enfermedad;
+            this.estadoPaciente = estadoPaciente;
         }
-
-        public int Dni { get; set; }
-        public int Edad { get; set; }
-        public string ObraSocial { get; set; }
-        public string Enfermedad { get; set; }
-        public bool EstadoPaciente { get; set; }
-
-
-
 
         /// <summary> Metodo que sobreescribe  </summary>
         public override string EstaHabilitado()
         {
             return base.EstaHabilitado() + " SI";
         }
-
-        /// <summary> Validacion de DNI </summary>
-        public override bool Equals(object obj)
-        {
-            return this.dni == ((Paciente)obj).dni;
-        }
-        public override int GetHashCode()
-        {
-            return Dni.GetHashCode();
-        }
         //<summary> No se implementa, metodo sobre escrito</summary>
         public override void Hablar()
         {
             throw new NotImplementedException();
         }
-       
+        //metodos get y set
+        //dni
+        public int getDni() { return dni; }
+        public void setDni(int dni)
+        {
+            this.dni = dni;
+        }
+        //edad
+        public int getEdad() { return edad; }
+        public void setEdad(int edad)
+        {
+            this.edad = edad;
+        }
+        //obraSocial
+        public string getObraSocial() { return obraSocial; }
+        public void setObraSocial(string obraSocial)
+        {
+            this.obraSocial = obraSocial;
+        }
+        //enfermedad
+        public string getEnfermedad() { return enfermedad; }
+        public void setEnfermedad(string enfermedad)
+        {
+            this.enfermedad = enfermedad;
+        }
+
+        //estadoPaciente
+        public bool getEstadoPaciente() { return estadoPaciente; }
+        public void setEstadoPaciente(bool estadoPaciente)
+        {
+            this.estadoPaciente = estadoPaciente;
+        }
     }
 }

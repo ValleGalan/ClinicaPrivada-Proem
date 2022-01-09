@@ -11,39 +11,14 @@ namespace BibliotecaDeClases
         public List<Paciente> listaDeCola;
         public List<Medico> listaDeMedico;
         public List<Consulta> listaDeConsulta;
-        private Historial historial;
-
-        public Hospital()
-        {
-
-        }
-
-        public Hospital(List<Paciente> listaDeCola)
-        {
-            this.listaDeCola = null;
-        }
-
-        public Hospital(List<Medico> listaDeMedico)
-        {
-            this.listaDeMedico = listaDeMedico;
-        }
-
-        public Hospital(List<Consulta> listaDeConsulta)
-        {
-            this.listaDeConsulta = listaDeConsulta;
-        }
-
-        public Hospital(Historial historial)
-        {
-            this.historial = historial;
-        }
-
-        public Hospital(List<Paciente> listaDeCola, List<Medico> listaDeMedico, List<Consulta> listaDeConsulta, Historial historial)
+      //  private Historial historial;
+          
+        public Hospital(List<Paciente> listaDeCola, List<Medico> listaDeMedico, List<Consulta> listaDeConsulta)//, Historial historial
         {
             this.listaDeCola = listaDeCola;
             this.listaDeMedico = listaDeMedico;
             this.listaDeConsulta = listaDeConsulta;
-            this.historial = historial;
+          //  this.historial = historial;
         }
         // <sumary> ALTA paciente <sumary>
         //public void AltaPaciente(string nombre, string apellido, int dni, int edad, string obraSocial,string Enfermedad ,bool estadopaciente)  { 

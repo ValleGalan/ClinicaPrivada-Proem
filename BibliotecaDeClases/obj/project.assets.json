@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Premium Intel\\.nuget\\packages\\": {}
+    "C:\\Users\\INTEL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\BibliotecaDeClases.csproj",
+      "projectUniqueName": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\BibliotecaDeClases.csproj",
       "projectName": "BibliotecaDeClases",
-      "projectPath": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\BibliotecaDeClases.csproj",
-      "packagesPath": "C:\\Users\\Premium Intel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\obj\\",
+      "projectPath": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\BibliotecaDeClases.csproj",
+      "packagesPath": "C:\\Users\\INTEL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Premium Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\INTEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

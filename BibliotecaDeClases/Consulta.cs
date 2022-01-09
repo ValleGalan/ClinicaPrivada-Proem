@@ -17,16 +17,7 @@ namespace BibliotecaDeClases
             Paciente = paciente;
             Medico = medico;
             Atiende = atiende;
-        }
-        //Metodo para ver si el Medico atiende al paciente o el paciente tiene por medico a X
-        public override bool Equals(object obj)
-        {
-            return obj is Consulta consulta && EqualityComparer<Paciente>.Default.Equals(Paciente, consulta.Paciente) && EqualityComparer<Medico>.Default.Equals(Medico, consulta.Medico);
-        }
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Paciente, Medico);
-        }
+        } 
 
 
     }

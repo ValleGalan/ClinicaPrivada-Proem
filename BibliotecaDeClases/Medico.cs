@@ -8,44 +8,53 @@ namespace BibliotecaDeClases
 {
     public class Medico : Persona /// <summary> Clase Medico hereda de persona </summary>
     {
-        private string Matricula { set; get; }
-        private string Especialidad { set; get; }
-        private int CantAtendidos { set; get; } //de pacientes 
-        private List<Paciente> ColaEspera { set; get; }  /// <summary> Lista de espera personal del medico </summary>
+        private string matricula { get; set; }
+        private string especialidad { get; set; }
+        private int cantAtendidos { get; set; } //de pacientes 
+        private List<Paciente> colaEspera { get; set; }  /// <summary> Lista de espera personal del medico </summary>
+      
+        //contructor lleno
+        public Medico(string nombre, string apellido, string matricula, string especialidad, int cantAtendidos, List<Paciente> colaEspera) : base(nombre, apellido)
+        {
+            this.matricula = matricula; 
+            this.especialidad = especialidad;
+            this.cantAtendidos = 0; //inicializo
+            this.colaEspera = new List<Paciente>();
+        }
+        /// <summary> Metodo contador </summary>        
+        public void ContadorPacientesAtendidos()
+        {
+            cantAtendidos = 0;  
+            cantAtendidos = cantAtendidos + 1;
+        }
+        //metodos get y set de los atributos
+        //matricula
+        public string getMatricula() { return matricula; }
+        public void setMatricula(string matricula)
+        {
+            this.matricula = matricula;
+        }
+        //especialidad
+        public string getEspecialidad() { return especialidad; }
+        public void setEspecialidad(string especialidad)
+        {
+            this.especialidad = especialidad;
+        }
+        //cantAtendidos
+        public int getCantAtendidos() { return cantAtendidos; }
+        public void setCantAtendidos(int cantAtendidos)
+        {
+            this.cantAtendidos = cantAtendidos;
+        }
 
-        public Medico(string nombre, string apellido, string especialidad, int CantAtendidos, List<Paciente> ColaEspera) : base(nombre, apellido)
-        {
-            especialidad = " ";
-            CantAtendidos = 0; //inicializo
-            ColaEspera = new List<Paciente>();
-        }
-        public override string EstaHabilitado() {
-            return base.EstaHabilitado() + " SI";
-        }
-               
-        public void ContadorPacientesAtendidos()/// <summary> Metodo contador </summary>
-        {
-            int CantAtendidos = 0; //ver :S
-            CantAtendidos = CantAtendidos + 1;
-        }
-       // public string GetMatricula() { return Matricula; }
-       // public string GetEspecialidad() { return Especialidad; }
-       /// public int GetPacientesAtendidos() { return CantAtendidos; }
-        //public List<Paciente> GetColaEspera() { return ColaEspera; }
-       
-        /// <summary> Validacion de Medico </summary>
-        public override bool Equals(object obj)
-        {
-            return this.Matricula == ((Medico)obj).Matricula;
-        }
-        public override int GetHashCode()
-        {
-            return Matricula.GetHashCode();
-        }
 
-        public override void Hablar() //heredo de persona 
+
+
+
+        public override void Hablar()
         {
             throw new NotImplementedException();
         }
+
     }
 }

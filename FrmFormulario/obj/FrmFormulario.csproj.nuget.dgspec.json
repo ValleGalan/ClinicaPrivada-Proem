@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\FrmFormulario\\FrmFormulario.csproj": {}
+    "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\FrmFormulario\\FrmFormulario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\BibliotecaDeClases.csproj": {
+    "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\BibliotecaDeClases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\BibliotecaDeClases.csproj",
+        "projectUniqueName": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\BibliotecaDeClases.csproj",
         "projectName": "BibliotecaDeClases",
-        "projectPath": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\BibliotecaDeClases.csproj",
-        "packagesPath": "C:\\Users\\Premium Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\obj\\",
+        "projectPath": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\BibliotecaDeClases.csproj",
+        "packagesPath": "C:\\Users\\INTEL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Premium Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\INTEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\FrmFormulario\\FrmFormulario.csproj": {
+    "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\FrmFormulario\\FrmFormulario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\FrmFormulario\\FrmFormulario.csproj",
+        "projectUniqueName": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\FrmFormulario\\FrmFormulario.csproj",
         "projectName": "FrmFormulario",
-        "projectPath": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\FrmFormulario\\FrmFormulario.csproj",
-        "packagesPath": "C:\\Users\\Premium Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\FrmFormulario\\obj\\",
+        "projectPath": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\FrmFormulario\\FrmFormulario.csproj",
+        "packagesPath": "C:\\Users\\INTEL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\FrmFormulario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Premium Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\INTEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\BibliotecaDeClases.csproj": {
-                "projectPath": "C:\\Users\\Premium Intel\\source\\repos\\SistemaClinicaPrivada\\BibliotecaDeClases\\BibliotecaDeClases.csproj"
+              "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\BibliotecaDeClases.csproj": {
+                "projectPath": "C:\\Users\\INTEL\\source\\repos\\ProyectoProem\\ClinicaPrivada-Proem\\BibliotecaDeClases\\BibliotecaDeClases.csproj"
               }
             }
           }
@@ -115,7 +115,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

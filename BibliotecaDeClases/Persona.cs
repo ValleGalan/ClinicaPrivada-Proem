@@ -8,14 +8,9 @@ namespace BibliotecaDeClases
 {
     public abstract class Persona // Clase Padre
     {
-        public string Nombre;
-        public string Apellido;
-
-        public Persona(string nombre, string apellido)
-        {
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-        }
+        private string nombre { get; set; }
+        private string apellido { get; set; }
+        
         //Metodo abstracto
         public abstract void Hablar();
         //Metodo virtual 
@@ -24,8 +19,26 @@ namespace BibliotecaDeClases
             return "Esta Habilitado";
         }
 
-        public string GetApellido() { return Apellido; }
-        public string GetNombre() { return Nombre; }
-       
+        //metodos get y set de los atributos
+        //nombre
+        public string getNombre() { return nombre; }
+        public void setNombre(string nombre){
+            this.nombre = nombre;
+        }
+        //apellido
+        public string getApellido() { return apellido; }
+        public void setApellido(string apellido)
+        {
+            this.apellido = apellido;
+        }
+
+
+        //constructor
+        public Persona(string nombre, string apellido)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
+
     }
 }

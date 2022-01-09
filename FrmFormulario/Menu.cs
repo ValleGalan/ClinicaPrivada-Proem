@@ -18,9 +18,7 @@ namespace FrmFormulario
         {
 
             InitializeComponent();
-            Hospital hospital = new Hospital();
-            hospital.CrearPaciente("P9", "Lopez", 40821912, 23, "No tiene", "Gripe", false);
-            hospital.CrearPaciente("P5", "Lopez", 40821912, 23, "No tiene", "Gripe", false);
+            
         }
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -49,9 +47,6 @@ namespace FrmFormulario
             formulari.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
