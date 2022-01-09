@@ -34,7 +34,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.rbNoAtendido = new System.Windows.Forms.RadioButton();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbLista = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -100,14 +100,14 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // listBox1
+            // lbLista
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
-            this.listBox1.Location = new System.Drawing.Point(315, 90);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(546, 256);
-            this.listBox1.TabIndex = 38;
+            this.lbLista.FormattingEnabled = true;
+            this.lbLista.ItemHeight = 21;
+            this.lbLista.Location = new System.Drawing.Point(315, 90);
+            this.lbLista.Name = "lbLista";
+            this.lbLista.Size = new System.Drawing.Size(546, 256);
+            this.lbLista.TabIndex = 38;
             // 
             // label1
             // 
@@ -154,6 +154,7 @@
             this.button3.TabIndex = 44;
             this.button3.Text = "lista de medicos";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MenuPacientes
             // 
@@ -165,7 +166,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbLista);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.rbNoAtendido);
             this.Controls.Add(this.label8);
@@ -187,7 +188,7 @@
         private Label label8;
         private RadioButton rbNoAtendido;
         private Button btnSalir;
-        private ListBox listBox1;
+        private ListBox lbLista;
         private Label label1;
         private Button button1;
         private Button button2;
