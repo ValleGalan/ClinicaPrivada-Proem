@@ -29,6 +29,7 @@ namespace BibliotecaDeClases
         {
         }
 
+       
         /// <summary> Metodo que sobreescribe  </summary>
         public override string EstaHabilitado()
         {
@@ -71,5 +72,25 @@ namespace BibliotecaDeClases
         {
             this.estadoPaciente = estadoPaciente;
         }
+        //funciones
+        public int cantidadActivos(bool estadoPaciente)
+        {
+            int c=0;
+            if (estadoPaciente == true)
+            {
+                c = c + 1;
+                return     c ;
+            }
+            return c;
+        }
+        public  string mostrarActivos(bool estadoPaciente,string nombre,string apellido,int dni)
+        { //metodo
+            if (estadoPaciente==true)
+            {
+                return nombre + " " + apellido + " " + dni;
+            }
+            return "no se encontro un paciente activo";
+        }
+
     }
 }

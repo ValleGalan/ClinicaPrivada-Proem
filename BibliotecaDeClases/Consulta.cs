@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 namespace BibliotecaDeClases
 {
     public  class Consulta
-    {  
-        private Paciente Paciente;
-        private Medico Medico;
-        private string Atiende;
+    {
+        public List<Paciente> listaDeCola;
+        public List<Medico> listaDeMedico;
+        public List<Consulta> listaDeConsulta;
 
-        public Consulta(Paciente paciente, Medico medico, string atiende)
+        public Consulta(List<Paciente> listaDeCola, List<Medico> listaDeMedico, List<Consulta> listaDeConsulta)//, Historial historial
         {
-            Paciente = paciente;
-            Medico = medico;
-            Atiende = atiende;
-        } 
+            this.listaDeCola = listaDeCola;
+            this.listaDeMedico = listaDeMedico;
+            this.listaDeConsulta = listaDeConsulta;
+            //  this.historial = historial;
+        }
 
 
     }

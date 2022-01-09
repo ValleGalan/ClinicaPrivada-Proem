@@ -48,17 +48,15 @@ namespace FrmFormulario
             string obraSocial= cbSocial.Text;
             string enfermedad = txtEnfermedad.Text;
            // bool atendido = txtAtendido.Text;
-           // Paciente paciente = new Paciente(nombre, apellido, dni, obraSocial, enfermedad, "true");
+            Paciente paciente = new Paciente(nombre, apellido, 6, obraSocial, enfermedad, "true");
             
-           // paciente.setNombre(nombre);
-           // paciente.setApellido(apellido);
-           // paciente.setDni(dni);
-            //paciente.setObraSocial(obraSocial);
-            //paciente.setEnfermedad(enfermedad);
-            //paciente.setEstadoPaciente(true);
-
-           // gridPaciente.Rows.Add(nombre, apellido, dni, edad, ObraSocial, Enfermedad, EstadoPaciente);
-
+            paciente.setNombre(nombre);
+            paciente.setApellido(apellido);
+            paciente.setDni(8);
+            paciente.setObraSocial(obraSocial);
+            paciente.setEnfermedad(enfermedad);
+            paciente.setEstadoPaciente(true);
+ 
         }
 
          
