@@ -25,6 +25,10 @@ namespace BibliotecaDeClases
             this.estadoPaciente = estadoPaciente;
         }
 
+        public Paciente(string nombre, string apellido, int dni, string obraSocial, string enfermedad, string atendido) : base(nombre, apellido)
+        {
+        }
+
         /// <summary> Metodo que sobreescribe  </summary>
         public override string EstaHabilitado()
         {

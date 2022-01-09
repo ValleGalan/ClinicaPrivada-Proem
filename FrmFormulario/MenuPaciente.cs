@@ -32,12 +32,14 @@ namespace FrmFormulario
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            gridPacientes.Rows.Clear();
-        }
+         
 
         private void gridPacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

@@ -47,6 +47,6 @@ namespace FrmFormulario
             formulari.Show();
         }
 
-       
+        
     }
 }
