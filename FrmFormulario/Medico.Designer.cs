@@ -327,7 +327,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(20, 308);
+            this.label9.Location = new System.Drawing.Point(22, 314);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(269, 23);
             this.label9.TabIndex = 21;
@@ -335,14 +335,14 @@
             // 
             // txtApellidoMedico
             // 
-            this.txtApellidoMedico.Location = new System.Drawing.Point(146, 419);
+            this.txtApellidoMedico.Location = new System.Drawing.Point(148, 425);
             this.txtApellidoMedico.Name = "txtApellidoMedico";
             this.txtApellidoMedico.Size = new System.Drawing.Size(113, 29);
             this.txtApellidoMedico.TabIndex = 27;
             // 
             // txtnombreMedico
             // 
-            this.txtnombreMedico.Location = new System.Drawing.Point(146, 384);
+            this.txtnombreMedico.Location = new System.Drawing.Point(148, 390);
             this.txtnombreMedico.Name = "txtnombreMedico";
             this.txtnombreMedico.Size = new System.Drawing.Size(113, 29);
             this.txtnombreMedico.TabIndex = 26;
@@ -351,7 +351,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(33, 421);
+            this.label10.Location = new System.Drawing.Point(35, 427);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 25);
             this.label10.TabIndex = 24;
@@ -361,7 +361,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(33, 381);
+            this.label11.Location = new System.Drawing.Point(35, 387);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(90, 25);
             this.label11.TabIndex = 23;
@@ -371,7 +371,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(33, 350);
+            this.label12.Location = new System.Drawing.Point(35, 356);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(118, 25);
             this.label12.TabIndex = 22;
@@ -389,7 +389,7 @@
             "Geriatría",
             "Hematología y hemoterapia",
             "Medicina de la educación física y del deporte"});
-            this.cbEspecialidad.Location = new System.Drawing.Point(153, 343);
+            this.cbEspecialidad.Location = new System.Drawing.Point(155, 349);
             this.cbEspecialidad.Name = "cbEspecialidad";
             this.cbEspecialidad.Size = new System.Drawing.Size(278, 29);
             this.cbEspecialidad.TabIndex = 28;
@@ -399,7 +399,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1190, 542);
+            this.ClientSize = new System.Drawing.Size(1190, 559);
             this.Controls.Add(this.cbEspecialidad);
             this.Controls.Add(this.txtApellidoMedico);
             this.Controls.Add(this.txtnombreMedico);
