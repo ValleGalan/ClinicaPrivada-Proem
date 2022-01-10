@@ -45,13 +45,20 @@ namespace BibliotecaDeClases
         public int getDni() { return dni; }
         public void setDni(int dni)
         {
-            this.dni = dni;
+             
+            if (dni >= 0 && dni<=99999999)
+                this.dni = dni;
+            else
+                this.dni = 0;
         }
         //edad
         public int getEdad() { return edad; }
         public void setEdad(int edad)
         {
-            this.edad = edad;
+            if(edad >= 0 && edad <=110)
+                this.edad = edad;
+            else
+                this.edad = 0;
         }
         //obraSocial
         public string getObraSocial() { return obraSocial; }
