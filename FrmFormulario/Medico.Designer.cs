@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuMedicos));
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,7 +65,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.cbEspecialidad = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridPaciente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -72,7 +75,7 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(453, 349);
+            this.button1.Location = new System.Drawing.Point(348, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(285, 64);
             this.button1.TabIndex = 0;
@@ -85,12 +88,13 @@
             this.button3.BackColor = System.Drawing.Color.Black;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(744, 350);
+            this.button3.Location = new System.Drawing.Point(652, 21);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 39);
             this.button3.TabIndex = 2;
-            this.button3.Text = "eliminar";
+            this.button3.Text = "limpiar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -211,7 +215,7 @@
             this.enfermedad,
             this.atendido,
             this.ApellidoMedico});
-            this.gridPaciente.Location = new System.Drawing.Point(329, 67);
+            this.gridPaciente.Location = new System.Drawing.Point(348, 202);
             this.gridPaciente.Name = "gridPaciente";
             this.gridPaciente.RowHeadersWidth = 51;
             this.gridPaciente.RowTemplate.Height = 31;
@@ -371,7 +375,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(35, 356);
+            this.label12.Location = new System.Drawing.Point(29, 467);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(118, 25);
             this.label12.TabIndex = 22;
@@ -389,10 +393,20 @@
             "Geriatría",
             "Hematología y hemoterapia",
             "Medicina de la educación física y del deporte"});
-            this.cbEspecialidad.Location = new System.Drawing.Point(155, 349);
+            this.cbEspecialidad.Location = new System.Drawing.Point(149, 460);
             this.cbEspecialidad.Name = "cbEspecialidad";
             this.cbEspecialidad.Size = new System.Drawing.Size(278, 29);
             this.cbEspecialidad.TabIndex = 28;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(975, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 187);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
             // 
             // MenuMedicos
             // 
@@ -400,6 +414,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1190, 559);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbEspecialidad);
             this.Controls.Add(this.txtApellidoMedico);
             this.Controls.Add(this.txtnombreMedico);
@@ -425,9 +440,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuMedicos";
             this.Text = "Medico";
+            this.Load += new System.EventHandler(this.MenuMedicos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridPaciente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -471,5 +489,6 @@
         private DataGridViewTextBoxColumn enfermedad;
         private DataGridViewTextBoxColumn atendido;
         private DataGridViewTextBoxColumn ApellidoMedico;
+        private PictureBox pictureBox1;
     }
 }

@@ -24,7 +24,7 @@ namespace FrmFormulario
             string apeMedico = txtApellidoMedico.Text;
             if (apeMedico == "" && nomMedico=="")
             {
-                MessageBox.Show("NO se puede cargar y finalizar, tiene que asignar un medico");
+                MessageBox.Show("NO se puede cargar y finalizar, tiene que asignar un medico al paciente");
             }
             else
             {
@@ -68,6 +68,23 @@ namespace FrmFormulario
  
         }
 
-         
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //limpio las celdas
+            txtDni.Text = " ";
+            txtNombre.Text = " ";
+            txtApellido.Text = " ";
+            cbSocial.Text = " ";
+            txtEnfermedad.Text = " ";
+            txtAtendido.Text = " ";
+            txtApellidoMedico.Text = "";
+            txtnombreMedico.Text = "";
+            cbEspecialidad.Text = " ";
+        }
+
+        private void MenuMedicos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
