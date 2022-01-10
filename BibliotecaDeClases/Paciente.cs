@@ -91,6 +91,18 @@ namespace BibliotecaDeClases
             }
             return "no esta activo el paciente " + " "+ dni;
         }
+        public string mostrarCola(bool estadoPaciente, string nombre, string apellido, int dni)
+        { //metodo
+            if (estadoPaciente == false) //no esta activo entonces espera
+            {
+                return nombre + " " + apellido + " " + dni;
+            }
+            else if (estadoPaciente == true)
+            {
+                return " ";
+            }
+            return "no hay nada en la cola";
+        }
 
     }
 }

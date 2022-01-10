@@ -215,11 +215,11 @@
             this.enfermedad,
             this.atendido,
             this.ApellidoMedico});
-            this.gridPaciente.Location = new System.Drawing.Point(348, 202);
+            this.gridPaciente.Location = new System.Drawing.Point(314, 202);
             this.gridPaciente.Name = "gridPaciente";
             this.gridPaciente.RowHeadersWidth = 51;
             this.gridPaciente.RowTemplate.Height = 31;
-            this.gridPaciente.Size = new System.Drawing.Size(854, 252);
+            this.gridPaciente.Size = new System.Drawing.Size(888, 252);
             this.gridPaciente.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn1

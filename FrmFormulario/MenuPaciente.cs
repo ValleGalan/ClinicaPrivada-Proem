@@ -15,11 +15,12 @@ namespace FrmFormulario
         public MenuPacientes()
         {
             InitializeComponent();
+           
         }
 
         private void MenuPacientes_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace FrmFormulario
             lbLista.Items.Add(paciente1.mostrarActivos(true,"Juana","Flores",34343434));
             lbLista.Items.Add(paciente1.mostrarActivos(false, "Oscar", "Gaspar", 25343423));
             lbLista.Items.Add(paciente1.mostrarActivos(true, "Pepe", "Perez", 98432187));
+            lbLista.Items.Add(paciente1.mostrarActivos(false, "Lucas", "Lopez", 23453234));
             // 
         }
 
@@ -64,6 +66,13 @@ namespace FrmFormulario
             lbLista.Items.Add(medico1.mostrarActivosMedicos("true","Luis", "Gonzalez", "Cardialogia"));
             lbLista.Items.Add(medico1.mostrarActivosMedicos("true","Carlos", "Ruiz", "Traumatologa"));
             lbLista.Items.Add(medico1.mostrarActivosMedicos("false","Josefa", "Cruz", "Dentista" ));
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Paciente pacienten = new Paciente("juana", "Clara", 23234234, "no tiene", "Cardialogia", "true");
+            lbLista.Items.Add(pacienten.mostrarCola(false, "Juana", "Flores", 34343434));
+            lbLista.Items.Add(pacienten.mostrarCola(false, "Lucas", "Lopez", 23453234));
         }
     }
 }
