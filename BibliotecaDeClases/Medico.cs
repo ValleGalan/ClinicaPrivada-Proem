@@ -11,22 +11,18 @@ namespace BibliotecaDeClases
      
         private string especialidad { get; set; }
         private int cantAtendidos { get; set; } //de pacientes 
-        private List<Paciente> colaEspera { get; set; }  /// <summary> Lista de espera personal del medico </summary>
-      
+        private string atendiendo { get; set; }
+        // private List<Paciente> colaEspera { get; set; }  /// <summary> Lista de espera personal del medico </summary>
+
         //contructor lleno
-        public Medico(string nombre, string apellido , string especialidad, int cantAtendidos, List<Paciente> colaEspera) : base(nombre, apellido)
-        {
-            
+        public Medico(string nombre, string apellido , string especialidad, int cantAtendidos, string atendiendo) : base(nombre, apellido)//, List<Paciente> colaEspera
+        { 
             this.especialidad = especialidad;
             this.cantAtendidos = 0; //inicializo
-            this.colaEspera = new List<Paciente>();
+            this.atendiendo = atendiendo;
+           // this.colaEspera = new List<Paciente>();
         }
-        /// <summary> Metodo contador </summary>        
-        public void ContadorPacientesAtendidos()
-        {
-            cantAtendidos = 0;  
-            cantAtendidos = cantAtendidos + 1;
-        }
+        
         //metodos get y set de los atributos
         
         //especialidad
@@ -39,7 +35,33 @@ namespace BibliotecaDeClases
         public int getCantAtendidos() { return cantAtendidos; }
         public void setCantAtendidos(int cantAtendidos)
         {
+             
             this.cantAtendidos = cantAtendidos;
+        }
+        //atentiendo
+        public string getAtendiendo() { return atendiendo; }
+        public void setAtendiendo(string atendiendo)
+        {
+            this.atendiendo = atendiendo;
+        }
+        //funciones
+        /// <summary> Metodo contador </summary>        
+        public void ContadorPacientesAtendidos()
+        {
+            cantAtendidos = 0;
+            cantAtendidos = cantAtendidos + 1;
+        }
+        public string mostrarActivosMedicos(string atendiendo, string nombre, string apellido,string especialidad)
+        { //metodo
+            if (atendiendo == "true")
+            {
+                return "ACTIVO: "+ "  "+nombre + "   " + apellido + "   " + especialidad;
+            }
+            else
+            {
+                return "no esta activo el medico: " + "   " + nombre +"   " + apellido + "   " + especialidad;
+            }
+            
         }
 
 

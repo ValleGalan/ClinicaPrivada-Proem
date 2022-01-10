@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label7
@@ -114,9 +115,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(71, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 28);
+            this.label1.Size = new System.Drawing.Size(338, 28);
             this.label1.TabIndex = 39;
-            this.label1.Text = "Listar";
+            this.label1.Text = "Listar Medicos y Pacientes Activos";
             // 
             // button2
             // 
@@ -136,7 +137,7 @@
             this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(41, 153);
+            this.button4.Location = new System.Drawing.Point(41, 186);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(179, 40);
             this.button4.TabIndex = 45;
@@ -144,12 +145,26 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(41, 140);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(179, 40);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "listar medicos";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MenuPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(917, 507);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
@@ -179,5 +194,6 @@
         private Label label1;
         private Button button2;
         private Button button4;
+        private Button button1;
     }
 }

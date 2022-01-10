@@ -57,5 +57,13 @@ namespace FrmFormulario
         {
             lbLista.Items.Clear();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Medico medico1 = new Medico("juana", "Clara", "Cardialogia",0, "true");
+            lbLista.Items.Add(medico1.mostrarActivosMedicos("true","Luis", "Gonzalez", "Cardialogia"));
+            lbLista.Items.Add(medico1.mostrarActivosMedicos("true","Carlos", "Ruiz", "Traumatologa"));
+            lbLista.Items.Add(medico1.mostrarActivosMedicos("false","Josefa", "Cruz", "Dentista" ));
+        }
     }
 }
